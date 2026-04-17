@@ -7,8 +7,12 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import chromedriver_autoinstaller
-oracledb.init_oracle_client() 
-
+#oracledb.init_oracle_client() 
+cnxn = oracledb.connect(
+    user="cobranzas",
+    password="report",
+    dsn="192.168.2.88:1521/SERVICIO"
+)
 # -------------------------
 # Variables
 # -------------------------
