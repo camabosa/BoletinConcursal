@@ -23,4 +23,4 @@ jobs:
           pip install pandas selenium oracledb chromedriver-autoinstaller
 
       - name: Ejecutar script
-        run: python boletin.py
+        run: python boletin_concursal.py
